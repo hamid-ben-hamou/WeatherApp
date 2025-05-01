@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 20px 15px;
+    color: #fff;
+}
+.container{
+    width: 520px;
+    background: linear-gradient(305deg, #730dd1, blue);
+    border-radius: 15px;
+    padding: 30px 10px;
+    text-align: center;
+}
+@media (max-width: 580px) {
+    .container{
+        width: 100%;
+    }
+}
+.container .error{
+    color: red;
+    padding: 20px 0;
+    display: none;
+}
+.container .vide{
+    color: red;
+    padding: 20px 0;
+    display: none;
+}
+.container .searche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.container .searche input{
+    width: 100%;
+    flex: 1;
+    outline: none;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 50px;
+}
+.container .searche button{
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+}
+
+.container .currentInfo{
+    display: none;
+}
+
+.container .img-status{
+    width: 100px;
+}
+.container .temp{
+    font-size: 70px;
+    margin: 40px 0 20px 0;
+}
+.container .weatherInfo{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .weatherInfo .humidity, .weatherInfo .wind{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.container .weatherInfo .humidity img, .weatherInfo .wind img{
+    width: 90px;
+}
